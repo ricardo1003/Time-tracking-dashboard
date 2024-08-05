@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik";
+    font-size: 18px;
+}
+body{
+    min-height: 100vh;
+    background-color: hsl(226, 43%, 10%);
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
