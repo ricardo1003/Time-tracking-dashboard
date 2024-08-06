@@ -2,12 +2,83 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Rubik";
-    font-size: 18px;
+}
+img{
+    max-width: 100%;
 }
 body{
     min-height: 100vh;
+    padding:4em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: hsl(226, 43%, 10%);
+    font-size: 18px;
+    text-align: center;
 }
+.name{
+    background-color: hsl(235, 46%, 20%);
+    color: white;
+    overflow: hidden;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: hsl(246, 80%, 60%);
+}
+.profile img{
+    height: 50px;
+    aspect-ratio: 1/1;
+    border: 3px solid white;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+.name, .profile{
+    border-radius: 10px;
+    
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+h1{
+    color: hsl(236, 100%, 87%);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-size: 0.875em;
+    font-weight: 300;
+}
+h1 span{
+    font-size: 1.25em;
+    color: white;
+}
+.profile, .options{
+    padding: 1.25em;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+}
+.options button{
+    padding: 0;
+    background-color: #ffffff00;
+    border: none;
+    color: hsl(235, 45%, 61%);
+}
+.options button.focused{
+    color: white;
+}
+
+
+
+
+
+
 
 
 .attribution { font-size: 11px; text-align: center; }
