@@ -2,6 +2,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Rubik";
+    color: white;
 }
 img{
     max-width: 100%;
@@ -16,9 +17,13 @@ body{
     font-size: 18px;
     text-align: center;
 }
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 .name{
     background-color: hsl(235, 46%, 20%);
-    color: white;
     overflow: hidden;
 }
 .profile{
@@ -37,7 +42,7 @@ body{
     -ms-border-radius: 100px;
     -o-border-radius: 100px;
 }
-.name, .profile{
+.name, .profile, .infoBox, .container{
     border-radius: 10px;
     
     -webkit-border-radius: 10px;
@@ -74,8 +79,79 @@ h1 span{
     color: white;
 }
 
-
-
+.infos{
+    display: grid;
+    gap: 20px;
+}
+.infoBox{
+    padding-top: 15.5%;
+}
+.infoBox .container{
+    background-color: hsl(235, 46%, 20%);
+}
+.infoBox .container button{
+    background-color: #ffffff00;
+    border: none;
+}
+.infoBox .container .title{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+.infoBox .container .title h2{
+    font-size: 1em;
+    font-weight: 500;
+}
+.selectedPeriod{
+    padding: 0 1em 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.selectedPeriod h3{
+    font-size: 1.5em;
+    font-weight: 300;
+}
+.selectedPeriod p{
+    font-size: .75em;
+    color: hsl(236, 100%, 87%);
+}
+.container .selectedPeriod:nth-child(3){
+    display: none
+}
+.container .selectedPeriod:nth-child(4){
+    display: none
+}
+.infoBox:nth-child(1){
+    background: hsl(15, 100%, 70%) url("../images/icon-work.svg"); 
+    background-repeat: no-repeat;
+    background-position:top right;
+}
+.infoBox:nth-child(2){
+    background: hsl(195, 74%, 62%) url("../images/icon-play.svg"); 
+    background-repeat: no-repeat;
+    background-position:top right;
+}
+.infoBox:nth-child(3){
+    background: hsl(348, 100%, 68%) url("../images/icon-study.svg"); 
+    background-repeat: no-repeat;
+    background-position:top right;
+}
+.infoBox:nth-child(4){
+    background: hsl(145, 58%, 55%) url("../images/icon-exercise.svg"); 
+    background-repeat: no-repeat;
+    background-position:top right;
+}
+.infoBox:nth-child(5){
+    background: hsl(264, 64%, 52%) url("../images/icon-social.svg"); 
+    background-repeat: no-repeat;
+    background-position:top right;
+}
+.infoBox:nth-child(6){
+    background: hsl(43, 84%, 65%) url("../images/icon-self-care.svg"); 
+    background-repeat: no-repeat;
+    background-position:top right;
+}
 
 
 
