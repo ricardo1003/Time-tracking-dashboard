@@ -1,1 +1,5 @@
-console.log("hello world!")
+const timeSpanButtonElements = document.getElementsByClassName("timeSpanButton")
+const infoContainerElements = document.getElementsByClassName("infoBox")
+const dailyHours = document.getElementsByClassName("Daily")
+const weeklyHours = document.getElementsByClassName("Weekly")
+const monthlyHours = document.getElementsByClassName("Monthly")
