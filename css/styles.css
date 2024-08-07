@@ -117,6 +117,12 @@ h1 span{
     justify-content: space-between;
     align-items: center;
 }
+.selectedPeriod{
+    display: none;
+}
+.selectedPeriod.displayed{
+    display: flex;
+}
 .selectedPeriod h3{
     font-size: 1.5em;
     font-weight: 300;
@@ -124,12 +130,6 @@ h1 span{
 .selectedPeriod p{
     font-size: .75em;
     color: hsl(236, 100%, 87%);
-}
-.container .selectedPeriod:nth-child(2){
-    display: none;
-}
-.container .selectedPeriod:nth-child(4){
-    display: none;
 }
 .infoBox:nth-child(1){
     background: hsl(15, 100%, 70%) url("../images/icon-work.svg"); 
