@@ -1,8 +1,30 @@
 const timeSpanButtonElements = [...document.getElementsByClassName("timeSpanButton")]
 const infoContainerElements = document.getElementsByClassName("infoBox")
-const dailyHours = document.getElementsByClassName("Daily")
-const weeklyHours = document.getElementsByClassName("Weekly")
-const monthlyHours = document.getElementsByClassName("Monthly")
+const dailyHours = document.getElementsByClassName("currentDaily")
+const weeklyHours = document.getElementsByClassName("currentWeekly")
+const monthlyHours = document.getElementsByClassName("currentMonthly")
+
+const lastdailyHours = document.getElementsByClassName("lastDaily")
+const lastweeklyHours = document.getElementsByClassName("lastWeekly")
+const lastmonthlyHours = document.getElementsByClassName("lastMonthly")
+
+fetch('../data.json')
+  .then(response => response.json())
+  .then(data => {
+    for(let i=0; i<dailyHours.length;i++){
+        dailyHours[i].innerHTML = data[i].timeframes.daily.current
+        lastdailyHours[i].innerHTML = data[i].timeframes.daily.previous
+
+        weeklyHours[i].innerHTML = data[i].timeframes.weekly.current
+        lastweeklyHours[i].innerHTML = data[i].timeframes.weekly.previous
+
+        monthlyHours[i].innerHTML = data[i].timeframes.monthly.current
+        lastmonthlyHours[i].innerHTML = data[i].timeframes.monthly.previous
+    }
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
 
 
 let clickedButton = 1

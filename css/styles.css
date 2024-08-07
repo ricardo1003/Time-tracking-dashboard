@@ -7,6 +7,9 @@
 img{
     max-width: 100%;
 }
+button{
+    cursor: pointer;
+}
 body{
     min-height: 100vh;
     padding:4em 2em;
@@ -131,6 +134,7 @@ h1 span{
     font-size: .75em;
     color: hsl(236, 100%, 87%);
 }
+.selectedPeriod p span{color: inherit;}
 .infoBox:nth-child(1){
     background: hsl(15, 100%, 70%) url("../images/icon-work.svg"); 
     background-repeat: no-repeat;
