@@ -4,6 +4,8 @@ const dailyHours = document.getElementsByClassName("currentDaily")
 const weeklyHours = document.getElementsByClassName("currentWeekly")
 const monthlyHours = document.getElementsByClassName("currentMonthly")
 
+const hoverStateButtonElements = document.getElementsByClassName("clickState")
+
 const lastdailyHours = document.getElementsByClassName("lastDaily")
 const lastweeklyHours = document.getElementsByClassName("lastWeekly")
 const lastmonthlyHours = document.getElementsByClassName("lastMonthly")
@@ -50,4 +52,14 @@ for(let i=0; i<timeSpanButtonElements.length;i++){
             selectedButton[clickedButton].classList.add("displayed")
         }
     })
+}
+
+for(let i=0; i<hoverStateButtonElements.length;i++){
+    hoverStateButtonElements[i].addEventListener("mouseover",()=>{
+        infoContainerElements[i].getElementsByClassName("container")[0].classList.add("hovered")
+    })
+    hoverStateButtonElements[i].addEventListener("mouseout",()=>{
+        infoContainerElements[i].getElementsByClassName("container")[0].classList.remove("hovered")
+    })
+
 }

@@ -95,10 +95,33 @@ h1 span{
     padding-top: 15.5%;
     position: relative;
 }
+.infoBox .clickState{
+    height: 100%;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff00;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.clickState:focus{
+    outline: 1px solid rgba(245, 245, 245, 0.542);
+}
 .infoBox .container{
     width: 100%;
     height: 100.1%;
+    position: relative;
     background-color: hsl(235, 46%, 20%);
+}
+.container.hovered{
+    background-color: hsl(235, 46%, 26%);
 }
 .infoBox .container button{
     background-color: #ffffff00;
