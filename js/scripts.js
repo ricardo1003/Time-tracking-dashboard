@@ -10,7 +10,7 @@ const lastdailyHours = document.getElementsByClassName("lastDaily")
 const lastweeklyHours = document.getElementsByClassName("lastWeekly")
 const lastmonthlyHours = document.getElementsByClassName("lastMonthly")
 
-fetch('../data.json')
+fetch('./data.json')
   .then(response => response.json())
   .then(data => {
     for(let i=0; i<dailyHours.length;i++){
